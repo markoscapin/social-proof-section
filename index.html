@@ -1,61 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <title>Frontend Mentor | Social proof section</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
-  <body>
-    10,000+ of our users love our products.
+  <title>Frontend Mentor | Social proof section</title>
 
-    We only provide great products combined with excellent customer service.
-    See what our satisfied customers are saying about our services.
-    
-    Rated 5 Stars in Reviews
-    Rated 5 Stars in Report Guru
-    Rated 5 Stars in BestTech
-    
-    Colton Smith 
-    Verified Buyer
-    "We needed the same printed design as the one we had ordered a week prior.
-    Not only did they find the original order, but we also received it in time.
-    Excellent!"
-    
-    Irene Roberts 
-    Verified Buyer
-    "Customer service is always excellent and very quick turn around. Completely
-    delighted with the simplicity of the purchase and the speed of delivery."
-    
-    Anne Wallace 
-    Verified Buyer
-    "Put an order with this company and can only praise them for the very high
-    standard. Will definitely use them again and recommend them to everyone!"
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+
+<div class="center">
+  <div class="main-container">
+    <div class="wrapper-main">
+
+      <!-- THIS IS THE UP WRAPPER -->
+      <div class="wrapper-up">
+        <img id="top-bkg-img"class="bkg-img"src="images/bg-pattern-top-desktop.svg" alt="pattern-top-img">
+        <div class="wrapper-info">
+          <h1>10,000+ of our users love our products.</h1>
+
+          <h3>We only provide great products combined with excellent customer service.
+            See what our satisfied customers are saying about our services.</h3>
+        </div>
+
+        <!-- wrapper for ratings with flex column -->
+        <div class="wrapper-ratings">
+          <!-- first rate status -->
+          <div class="stars">
+            <img src="images/icon-star.svg" alt="star-img">
+            <img src="images/icon-star.svg" alt="star-img">
+            <img src="images/icon-star.svg" alt="star-img">
+            <img src="images/icon-star.svg" alt="star-img">
+            <img src="images/icon-star.svg" alt="star-img">
+            <p>Rated 5 Stars in Reviews</p>
+          </div>
+
+          <!-- second rate status -->
+          <div id="guru-rating" class="stars">
+            <img src="images/icon-star.svg" alt="star-img">
+            <img src="images/icon-star.svg" alt="star-img">
+            <img src="images/icon-star.svg" alt="star-img">
+            <img src="images/icon-star.svg" alt="star-img">
+            <img src="images/icon-star.svg" alt="star-img">
+            <p>Rated 5 Stars in Report Guru</p>
+          </div>
+
+          <!-- third rate status -->
+          <div id="best-tech-rating"class="stars">
+            <img src="images/icon-star.svg" alt="star-img">
+            <img src="images/icon-star.svg" alt="star-img">
+            <img src="images/icon-star.svg" alt="star-img">
+            <img src="images/icon-star.svg" alt="star-img">
+            <img src="images/icon-star.svg" alt="star-img">
+            <p>Rated 5 Stars in BestTech</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- THIS IS THE BOTTOM WRAPPER -->
+      <div class="wrapper-bottom">
+
+          <img id="bottom-bkg-img"class="bkg-img"src="images/bg-pattern-bottom-desktop.svg" alt="pattern-bottom-img">
+        <!-- This is the first profile -->
+        <div class="profile">
+          <div class="top-container">
+            <img class="profile-img" src="images/image-colton.jpg" alt="colton-img">
+            <h4 class="name">Colton Smith</h4>
+            <h4 class="verified">Verified Buyer</h4>
+          </div>
+          <div class="quote-container">
+            <p>"We needed the same printed design as the one we had ordered a week prior.
+              Not only did they find the original order, but we also received it in time.
+              Excellent!"</p>
+          </div>
+        </div>
+
+        <!-- This is the second profile -->
+        <div id="irene-profile" class="profile">
+          <div class="top-container">
+            <img class="profile-img" src="images/image-irene.jpg" alt="irene-img">
+            <h4 class="name">Irene Roberts</h4>
+            <h4 class="verified">Verified Buyer</h4>
+          </div>
+          <div class="quote-container">
+            <p>"Customer service is always excellent and very quick turn around. Completely
+              delighted with the simplicity of the purchase and the speed of delivery."</p>
+          </div>
+        </div>
+
+        <!-- This is the third profile -->
+        <div id="anne-profile" class="profile">
+          <div class="top-container">
+            <img class="profile-img" src="images/image-anne.jpg" alt="anne-img">
+            <h4 class="name">Anne Wallace</h4>
+            <h4 class="verified">Verified Buyer</h4>
+          </div>
+          <div class="quote-container">
+            <p>"Put an order with this company and can only praise them for the very high
+              standard. Will definitely use them again and recommend them to everyone!"</p>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+
 
     <div class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Marco Scapin</a>.
     </div>
-  </body>
+
+
+  </div>
+
+
+</div>
+
+
+</body>
+
 </html>

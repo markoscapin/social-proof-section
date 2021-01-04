@@ -1,0 +1,193 @@
+
+body {
+  font-size: 15px;
+  font-family: 'Spartan', sans-serif;
+  margin: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  width: 100%;
+  margin: 100px auto;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.stars {
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  max-width: 375px;
+}
+.stars p {
+  display: inline-block;
+  color: hsl(300, 43%, 22%);
+  padding: 0 20px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.name {
+  margin-bottom: 0;
+  color: hsl(0, 0%, 100%);
+
+}
+
+.verified {
+  margin-top: 2px;
+  color: hsl(303, 10%, 53%);
+}
+
+
+
+.profile {
+  display: grid;
+  padding: 30px;
+  background: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  color: hsl(300, 24%, 96%);
+  margin: 20px;
+
+}
+
+
+
+.profile-img {
+  border-radius: 100%;
+  float: left;
+  margin-right: 30px;
+  max-width: 80px;
+
+}
+
+.wrapper-up {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.wrapper-bottom {
+  display: flex;
+}
+
+
+.wrapper-ratings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+
+}
+
+.wrapper-info {
+  max-width: 50%;
+  padding: 30px;
+  width: 40%;
+  padding-top: 7%;
+}
+
+.wrapper-main {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.main-container {
+  max-width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+h1 {
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+  font-size: 60px;
+}
+
+h3 {
+  font-weight: 300;
+  color: hsl(303, 10%, 53%);
+
+}
+
+
+#irene-profile {
+  position: relative;
+  top: 20px;
+}
+
+#anne-profile {
+  position: relative;
+  top: 40px;
+}
+
+
+#guru-rating {
+  margin-left: 50px;
+
+}
+
+#best-tech-rating {
+  margin-left: 100px;
+}
+
+#bottom-bkg-img {
+  right: 10%;
+  bottom: 0;
+}
+
+#top-bkg-img {
+  left: 10%;
+  top: 0;
+}
+.bkg-img {
+position: absolute;
+}
+
+.center {
+  height: 100%;
+  width:100%;
+  display: fixed;
+  position: absolute;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  .wrapper-info {
+    text-align: center;
+  }
+  .wrapper-bottom{
+    flex-direction: column;
+
+  }
+  .wrapper-up {
+    flex-direction: column;
+  }
+
+  #guru-rating {
+    margin-left: 0;
+
+  }
+
+  #best-tech-rating {
+    margin-left: 0;
+  }
+
+  .stars {
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+  }
+  .stars p {
+    display: block;
+    color: hsl(300, 43%, 22%);
+    padding: 0 20px;
+    margin: 0;
+    font-weight: 500;
+}
