@@ -5,12 +5,13 @@ body {
   margin: 0;
 }
 
+
+
 .attribution {
   font-size: 11px;
   text-align: center;
 
-  width: 100%;
-  margin: 100px auto;
+
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -21,15 +22,17 @@ body {
   border-radius: 10px;
   padding: 15px;
   margin: 10px;
-  max-width: 375px;
+  max-width: 70%;
 }
 .stars p {
   display: inline-block;
   color: hsl(300, 43%, 22%);
   padding: 0 20px;
   margin: 0;
-  font-weight: 500;
+  font-weight: 700;
 }
+
+
 
 .name {
   margin-bottom: 0;
@@ -79,15 +82,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40%;
-
+  width: 50%;
 }
 
 .wrapper-info {
-  max-width: 50%;
-  padding: 30px;
-  width: 40%;
-  padding-top: 7%;
+  width: 45%;
 }
 
 .wrapper-main {
@@ -97,15 +96,41 @@ body {
 
 
 .main-container {
-  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
   height: 100%;
   margin: auto;
+}
+
+.center::before {
+  content: "";
+  background-image: url(../images/bg-pattern-top-desktop.svg);
+  height: 362px;
+  width: 584px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-size: 100% 100%;
+}
+
+.center::after {
+  /* width="1085" height="673" */
+  content: "";
+  background-image: url(../images/bg-pattern-bottom-desktop.svg);
+  height: 673px;
+  width: 1085px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+
 }
 
 h1 {
   font-weight: 700;
   color: hsl(300, 43%, 22%);
-  font-size: 60px;
+  font-size: 4vw;
 }
 
 h3 {
@@ -114,7 +139,9 @@ h3 {
 
 }
 
-
+#colton-profile {
+  margin-left: 0;
+}
 #irene-profile {
   position: relative;
   top: 20px;
@@ -123,6 +150,7 @@ h3 {
 #anne-profile {
   position: relative;
   top: 40px;
+  margin-right: 0;
 }
 
 
@@ -135,15 +163,7 @@ h3 {
   margin-left: 100px;
 }
 
-#bottom-bkg-img {
-  right: 10%;
-  bottom: 0;
-}
 
-#top-bkg-img {
-  left: 10%;
-  top: 0;
-}
 .bkg-img {
 position: absolute;
 }
@@ -158,11 +178,28 @@ position: absolute;
 
 
 @media only screen and (max-width: 600px) {
+
+  .main-container {
+    justify-content: normal;
+    text-align: center;
+  }
+
+  .wrapper-ratings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
   .wrapper-info {
     text-align: center;
+    width: 100%;
   }
   .wrapper-bottom{
     flex-direction: column;
+    margin: auto;
+    width: 100%;
+    justify-content: space-between;
 
   }
   .wrapper-up {
@@ -170,24 +207,50 @@ position: absolute;
   }
 
   #guru-rating {
-    margin-left: 0;
+    margin-left: auto;
 
   }
 
   #best-tech-rating {
-    margin-left: 0;
+    margin-left: auto;
   }
 
   .stars {
-    background-color: hsl(300, 24%, 96%);
-    border-radius: 10px;
-    padding: 15px;
-    margin: 10px;
+    margin: 10px auto;
+    max-width: 100%;
   }
+
   .stars p {
-    display: block;
-    color: hsl(300, 43%, 22%);
-    padding: 0 20px;
-    margin: 0;
-    font-weight: 500;
+    display: inline-block;
+  }
+
+  .profile {
+    display: grid;
+    padding: 30px;
+    margin:  10px 0px;
+
+  }
+
+
+  #irene-profile {
+    position: relative;
+    top: 0px;
+  }
+
+  #anne-profile {
+    position: relative;
+    top: 0px;
+    margin-right: 0;
+  }
+
+  .center::before {
+    width: 100vw;
+
+  }
+
+  h1 {
+    font-size: 9vw;
+    padding: 50px 10px 30px;
+  }
+
 }
