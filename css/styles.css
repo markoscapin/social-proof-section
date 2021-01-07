@@ -243,9 +243,16 @@ position: absolute;
     margin-right: 0;
   }
 
+  .center {
+    position: relative;
+  }
+
   .center::before {
     width: 100vw;
 
+  }
+  .center::after {
+    content: none;
   }
 
   h1 {
